@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 10 Functions Practice Test</title>
+<style>
+  :root { --ink:#202124; --muted:#5f6368; --line:#d9dce1; --card:#fff; --bg:#f6f7f9; --accent:#315efb; --good:#137333; --bad:#c5221f; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--ink); line-height:1.5; }
+  header { background:#fff; border-bottom:1px solid var(--line); padding:24px 18px; position:sticky; top:0; z-index:5; }
+  header .wrap, main { max-width:900px; margin:auto; }
+  h1 { margin:0 0 5px; font-size:28px; }
+  .subtitle { color:var(--muted); }
+  main { padding:22px 14px 60px; }
+  .info { background:#eef3ff; border:1px solid #cdd8ff; padding:14px 16px; border-radius:12px; margin-bottom:18px; }
+  .section { margin:24px 0 10px; color:#243b7a; font-size:20px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; margin:12px 0; box-shadow:0 1px 2px #00000008; }
+  .q { font-weight:700; margin-bottom:10px; }
+  .points { float:right; color:var(--muted); font-weight:400; font-size:13px; }
+  label { display:block; margin:7px 0; }
+  input[type=text], input[type=number] { width:min(100%,430px); padding:9px 10px; border:1px solid #b9bdc5; border-radius:8px; font-size:16px; }
+  textarea { width:100%; min-height:75px; padding:9px; border:1px solid #b9bdc5; border-radius:8px; font-size:15px; resize:vertical; }
+  .choices { margin-top:5px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  button { border:0; border-radius:9px; padding:11px 17px; font-size:15px; cursor:pointer; margin:5px 7px 5px 0; }
+  .primary { background:var(--accent); color:#fff; }
+  .secondary { background:#e8eaed; color:var(--ink); }
+  #result { display:none; background:#fff; border:2px solid var(--accent); border-radius:14px; padding:18px; margin:20px 0; }
+  .feedback { margin-top:8px; font-weight:600; }
+  .good { color:var(--good); } .bad { color:var(--bad); }
+  details { margin-top:10px; }
+  summary { cursor:pointer; color:#243b7a; font-weight:700; }
+  .small { color:var(--muted); font-size:13px; }
+  .formula { font-family:Georgia,serif; font-size:17px; }
+  @media(max-width:650px){ .grid{grid-template-columns:1fr;} h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Grade 10 Functions — Practice Test</h1>
+  <div class="subtitle">Based on the Functions & Relations material in the uploaded worksheet • Sections 1.1–1.4</div>
+</div></header>
+
+<main>
+<div class="info">
+  <strong>Suggested time: 45–60 minutes</strong><br>
+  Try the test without notes first. For written-response questions, show your reasoning on paper. The automatic score covers the multiple-choice and short numerical questions; use the answer key after you finish.
+</div>
+
+<form id="test">
+
+<h2 class="section">Part A — Functions and Relations</h2>
+
+<div class="card">
+<div class="q">1. What makes a relation a function? <span class="points">1 mark</span></div>
+<textarea name="q1" placeholder="Explain in your own words."></textarea>
+</div>
+
+<div class="card">
+<div class="q">2. Is the relation {(1, 4), (2, 5), (3, 5), (1, 7)} a function? <span class="points">1 mark</span></div>
+<div class="choices">
+<label><input type="radio" name="q2" value="yes"> Yes</label>
+<label><input type="radio" name="q2" value="no"> No</label>
+</div>
+</div>
+
+<div class="card">
+<div class="q">3. Which equation represents a function of x? <span class="points">1 mark</span></div>
+<div class="choices">
+<label><input type="radio" name="q3" value="a"> A. x = y² + 1</label>
+<label><input type="radio" name="q3" value="b"> B. y = x² − 4</label>
+<label><input type="radio" name="q3" value="c"> C. x² + y² = 25</label>
+<label><input type="radio" name="q3" value="d"> D. x = 3</label>
+</div>
+</div>
+
+<div class="card">
+<div class="q">4. Use the vertical-line test to decide whether the graph of x² + y² = 16 represents y as a function of x. Explain briefly. <span class="points">2 marks</span></div>
+<textarea name="q4"></textarea>
+</div>
+
+<div class="card">
+<div class="q">5. For y = 3, is the relation a function? For x = 3, is the relation a function? <span class="points">2 marks</span></div>
+<textarea name="q5"></textarea>
+</div>
+
+<h2 class="section">Part B — Function Notation</h2>
+
+<div class="card">
+<div class="q">6. Let <span class="formula">f(x) = 2 − 3x</span>. Find f(−4). <span class="points">1 mark</span></div>
+<input type="number" name="q6" step="any" placeholder="Answer">
+</div>
+
+<div class="card">
+<div class="q">7. Let <span class="formula">f(x) = 3(x − 1)² − 4</span>. Find f(−1). <span class="points">1 mark</span></div>
+<input type="number" name="q7" step="any" placeholder="Answer">
+</div>
+
+<div class="card">
+<div class="q">8. Let <span class="formula">A(x) = 2x − 5</span>. Find A(3x − 1). <span class="points">1 mark</span></div>
+<input type="text" name="q8" placeholder="Simplified expression">
+</div>
+
+<div class="card">
+<div class="q">9. Let <span class="formula">f(x) = 3x + 4</span>. What value of x makes f(x) = 19? <span class="points">1 mark</span></div>
+<input type="number" name="q9" step="any" placeholder="x =">
+</div>
+
+<div class="card">
+<div class="q">10. Let <span class="formula">f(x) = 3x + 4</span> and <span class="formula">g(x) = x + 1</span>. Find x such that f(x) = g(x). <span class="points">1 mark</span></div>
+<input type="number" name="q10" step="any" placeholder="x =">
+</div>
+
+<h2 class="section">Part C — Domain and Range</h2>
+
+<div class="card">
+<div class="q">11. State the domain and range of <span class="formula">f(x) = 4x + 1</span> over the real numbers. <span class="points">2 marks</span></div>
+<textarea name="q11" placeholder="Domain: ...&#10;Range: ..."></textarea>
+</div>
+
+<div class="card">
+<div class="q">12. State the domain and range of <span class="formula">f(x) = √(x − 2)</span>. <span class="points">2 marks</span></div>
+<textarea name="q12" placeholder="Domain: ...&#10;Range: ..."></textarea>
+</div>
+
+<div class="card">
+<div class="q">13. State the domain and range of <span class="formula">f(x) = 3(x + 1)² − 4</span>. <span class="points">2 marks</span></div>
+<textarea name="q13" placeholder="Domain: ...&#10;Range: ..."></textarea>
+</div>
+
+<div class="card">
+<div class="q">14. State the domain and range of <span class="formula">f(x) = 1/x</span>. <span class="points">2 marks</span></div>
+<textarea name="q14" placeholder="Domain: ...&#10;Range: ..."></textarea>
+</div>
+
+<h2 class="section">Part D — Applications and Reasoning</h2>
+
+<div class="card">
+<div class="q">15. A freight company charges $4/kg for an order under 100 kg and $3.50/kg for an order of at least 100 kg. Let x be the order mass in kg and C(x) the cost. Write C(x) as a piecewise function. <span class="points">2 marks</span></div>
+<textarea name="q15" placeholder="Write the two rules and the corresponding conditions on x."></textarea>
+</div>
+
+<div class="card">
+<div class="q">16. For the freight function above, calculate the cost of a 99 kg order and a 100 kg order. <span class="points">2 marks</span></div>
+<div class="grid">
+<input type="number" name="q16a" step="any" placeholder="99 kg: $">
+<input type="number" name="q16b" step="any" placeholder="100 kg: $">
+</div>
+</div>
+
+<div class="card">
+<div class="q">17. A ball is thrown from the roof of a 25 m building. Its height is modelled by h(t) = −5t² + 20t + 25, where t is time in seconds. What is the initial height? <span class="points">1 mark</span></div>
+<input type="number" name="q17" step="any" placeholder="metres">
+</div>
+
+<div class="card">
+<div class="q">18. Using the same model, find the height after 2 seconds. <span class="points">1 mark</span></div>
+<input type="number" name="q18" step="any" placeholder="metres">
+</div>
+
+<div class="card">
+<div class="q">19. For the ball model, state a realistic domain if the ball hits the ground after 5 seconds, and state the range. <span class="points">2 marks</span></div>
+<textarea name="q19" placeholder="Domain: ...&#10;Range: ..."></textarea>
+</div>
+
+<div class="card">
+<div class="q">20. A square of side length 10 is drawn around an inscribed square. If x is the horizontal distance shown in the original problem, the area model is A(x) = 2x² − 20x + 100. State the domain of x and the range of A(x) for the geometric situation. <span class="points">2 marks</span></div>
+<textarea name="q20" placeholder="Domain: ...&#10;Range: ..."></textarea>
+</div>
+
+</form>
+
+<div>
+<button class="primary" type="button" onclick="checkTest()">Check Objective Answers</button>
+<button class="secondary" type="button" onclick="document.getElementById('test').reset(); document.getElementById('result').style.display='none';">Reset</button>
+</div>
+
+<div id="result"></div>
+
+<details>
+<summary>Answer key — open only after completing the test</summary>
+<div class="card">
+<ol>
+<li>A function assigns exactly one output to every input.</li>
+<li><strong>No.</strong> The input 1 is paired with both 4 and 7.</li>
+<li><strong>B.</strong> y = x² − 4.</li>
+<li><strong>No.</strong> A vertical line can intersect the circle x²+y²=16 twice.</li>
+<li><strong>y=3 is a function</strong>; x=3 is not a function of x.</li>
+<li>14</li>
+<li>8</li>
+<li>6x − 7</li>
+<li>5</li>
+<li>−3/2</li>
+<li>Domain: all real numbers. Range: all real numbers.</li>
+<li>Domain: x ≥ 2. Range: y ≥ 0.</li>
+<li>Domain: all real numbers. Range: y ≥ −4.</li>
+<li>Domain: x ≠ 0. Range: y ≠ 0.</li>
+<li>C(x) = 4x for 0 ≤ x &lt; 100; C(x) = 3.5x for x ≥ 100.</li>
+<li>$396; $350.</li>
+<li>25 m.</li>
+<li>45 m.</li>
+<li>Domain: 0 ≤ t ≤ 5. Range: 0 ≤ h ≤ 45.</li>
+<li>Domain: 0 ≤ x ≤ 10; Range: 50 ≤ A ≤ 100.</li>
+</ol>
+<p class="small">For written questions, equivalent mathematically correct wording is acceptable.</p>
+</div>
+</details>
+
+<p class="small">Source basis: the uploaded Functions worksheet, especially its 1.1–1.4 material and consolidation questions. The PDF is image-based, so the practice questions were transcribed/adapted from the visible pages rather than from machine-readable PDF text.</p>
+</main>
+
+<script>
+function val(name){ const e=document.querySelector('[name="'+name+'"]'); return e ? e.value.trim().toLowerCase().replace(/\s+/g,'') : ''; }
+function radio(name){ const e=document.querySelector('input[name="'+name+'"]:checked'); return e ? e.value : ''; }
+function checkTest(){
+  const checks = [
+    ['2', radio('q2')==='no'],
+    ['3', radio('q3')==='b'],
+    ['6', Math.abs(Number(val('q6'))-14)<1e-9],
+    ['7', Math.abs(Number(val('q7'))-8)<1e-9],
+    ['8', ['6x-7','6*x-7'].includes(val('q8').replace(/\^1/g,''))],
+    ['9', Math.abs(Number(val('q9'))-5)<1e-9],
+    ['10', Math.abs(Number(val('q10'))+1.5)<1e-9],
+    ['16a', Math.abs(Number(val('q16a'))-396)<1e-9],
+    ['16b', Math.abs(Number(val('q16b'))-350)<1e-9],
+    ['17', Math.abs(Number(val('q17'))-25)<1e-9],
+    ['18', Math.abs(Number(val('q18'))-45)<1e-9]
+  ];
+  const attempted=checks.filter(x=>x[0].includes('a') ? val('q'+x[0]) : true);
+  let score=0;
+  checks.forEach(x=>{ if(x[1]) score++; });
+  const r=document.getElementById('result');
+  r.style.display='block';
+  r.innerHTML='<strong>Objective-question score: '+score+' / '+checks.length+'</strong><br><span class="small">This score does not include the written-response questions. Check the answer key below when you are ready.</span>';
+  r.scrollIntoView({behavior:'smooth', block:'center'});
+}
+</script>
+</body>
+</html>
